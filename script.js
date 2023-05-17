@@ -30,8 +30,8 @@ const tableBody = document.querySelector("#output");
 const html = function (a, b) {
   return `
     <tr>
-        <th>Promise ${a}</th>
-        <th>${b} (s)</th>
+        <td>Promise ${a}</td>
+        <td>${b} (s)</td>
     </tr>
     `;
 };
@@ -48,8 +48,8 @@ const add = async function () {
     "beforeend",
     `
   <tr>
-      <th>Total</th>
-      <th>${total} (s)</th>
+      <td>Total</td>
+      <td>${total} (s)</td>
   </tr>
   `
   );
