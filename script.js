@@ -39,7 +39,7 @@ const html = function (a, b) {
 const add = async function () {
   const data = await all();
   let total = 0;
-	tableBody.innerHtml = '';
+	tableBody.innerHTML = '';
   data.forEach((val, i, arr) => {
     tableBody.insertAdjacentHTML("beforeend", html(i + 1, val));
     total += val;
