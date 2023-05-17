@@ -27,7 +27,6 @@ const all = async function () {
 // logic for adding the data to the table
 
 const tableBody = document.querySelector("#output");
-tableBody.innerHtml = '';
 const html = function (a, b) {
   return `
     <tr>
@@ -40,6 +39,7 @@ const html = function (a, b) {
 const add = async function () {
   const data = await all();
   let total = 0;
+	tableBody.innerHtml = '';
   data.forEach((val, i, arr) => {
     tableBody.insertAdjacentHTML("beforeend", html(i + 1, val));
     total += val;
