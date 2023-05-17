@@ -5,7 +5,7 @@
 
 // Create three promises
 const randomNumberGenerator = function () {
-  return Math.floor(Math.random() * (3 - 1 + 1) + 1);
+  return (Math.random() * (3 - 1 + 1) + 1);
 };
 
 const timeout = function (ms) {
@@ -39,7 +39,7 @@ const html = function (a, b) {
 const add = async function () {
   const data = await all();
   let total = 0;
-	tableBody.innerHTML = '';
+  tableBody.innerHTML = '';
   data.forEach((val, i, arr) => {
     tableBody.insertAdjacentHTML("beforeend", html(i + 1, val));
     total += val;
