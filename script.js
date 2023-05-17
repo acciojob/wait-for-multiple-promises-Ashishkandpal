@@ -9,7 +9,7 @@ const randomNumberGenerator = function () {
 };
 
 const timeout = function (ms) {
-  return new Promise((resolve) => setTimeout(resolve, ms * 100));
+  return new Promise((resolve) => setTimeout(resolve, ms * 1000));
 };
 
 const task = async function () {
