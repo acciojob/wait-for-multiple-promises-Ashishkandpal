@@ -27,6 +27,7 @@ const all = async function () {
 // logic for adding the data to the table
 
 const tableBody = document.querySelector("#output");
+tableBody.innerHtml = '';
 const html = function (a, b) {
   return `
     <tr>
