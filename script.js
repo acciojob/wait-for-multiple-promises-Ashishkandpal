@@ -42,7 +42,7 @@ const add = async function () {
   tableBody.innerHTML = '';
   data.forEach((val, i, arr) => {
     tableBody.insertAdjacentHTML("beforeend", html(i + 1, val));
-    total += +val;
+    total = Math.max(total, val);
   });
 	await timeout(total);
   tableBody.insertAdjacentHTML(
