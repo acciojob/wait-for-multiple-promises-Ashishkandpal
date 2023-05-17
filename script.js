@@ -44,7 +44,6 @@ const add = async function () {
     tableBody.insertAdjacentHTML("beforeend", html(i + 1, val));
     total = Math.max(total, val);
   });
-	await timeout(total);
   tableBody.insertAdjacentHTML(
     "beforeend",
     `
