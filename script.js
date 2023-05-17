@@ -5,7 +5,7 @@
 
 // Create three promises
 const randomNumberGenerator = function () {
-  return (Math.random() * (3 - 1 + 1) + 1).toFixed(4);
+  return Math.floor(Math.random() * (3 - 1 + 1) + 1);
 };
 
 const timeout = function (ms) {
